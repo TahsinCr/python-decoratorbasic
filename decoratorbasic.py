@@ -3,12 +3,12 @@ import functools
 
 from callabletype import is_class, is_function, is_callable
 
-__version__ = '1.0'
+__version__ = '1.0.1'
 
 TCallable = TypeVar('TCallable', bound=Callable)
 TDecorator = TypeVar('TDecorator', bound=Callable)
 
-DECORATOR_KEY = '__decorators__'
+DECORATOR_KEY = '__decorator__'
 
 
 class DecoratorContext(Generic[TCallable]):
